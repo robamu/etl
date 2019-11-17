@@ -92,10 +92,10 @@ namespace etl
     typedef const T*                              const_pointer;
     typedef T*                                    iterator;
     typedef const T*                              const_iterator;
-    typedef ETLSTD::reverse_iterator<iterator>       reverse_iterator;
-    typedef ETLSTD::reverse_iterator<const_iterator> const_reverse_iterator;
+    typedef std::reverse_iterator<iterator>       reverse_iterator;
+    typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
     typedef size_t                                size_type;
-    typedef typename ETLSTD::iterator_traits<iterator>::difference_type difference_type;
+    typedef typename std::iterator_traits<iterator>::difference_type difference_type;
 
   protected:
 
@@ -365,7 +365,7 @@ namespace etl
     template <typename TIterator>
     void assign(TIterator first, TIterator last)
     {
-      ETL_STATIC_ASSERT((etl::is_same<typename etl::remove_cv<T>::type, typename etl::remove_cv<typename ETLSTD::iterator_traits<TIterator>::value_type>::type>::value), "Iterator type does not match container type");
+      ETL_STATIC_ASSERT((etl::is_same<typename etl::remove_cv<T>::type, typename etl::remove_cv<typename std::iterator_traits<TIterator>::value_type>::type>::value), "Iterator type does not match container type");
 
 #if defined(ETL_DEBUG)
       difference_type d = std::distance(first, last);
@@ -575,7 +575,7 @@ namespace etl
 #endif
 
     //*************************************************************************
-    /// Emplaces a value to the vextor at the specified position.
+    /// Emplaces a value to the vector at the specified position.
     //*************************************************************************
 #if ETL_CPP11_SUPPORTED && !defined(ETL_STLPORT)
     template <typename ... Args>
@@ -1627,7 +1627,7 @@ namespace etl
     /// Constructor, with size.
     ///\param initial_size The initial size of the vector.
     //*************************************************************************
-    explicit vector(size_t initial_size, void* buffer, size_t max_size)
+    vector(size_t initial_size, void* buffer, size_t max_size)
       : etl::ivector<T*>(reinterpret_cast<T**>(buffer), max_size)
     {
       this->initialise();

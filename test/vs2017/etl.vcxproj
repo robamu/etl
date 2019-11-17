@@ -223,6 +223,7 @@
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <SupportJustMyCode>false</SupportJustMyCode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -457,6 +458,7 @@
     <ClInclude Include="..\..\include\etl\fsm.h" />
     <ClInclude Include="..\..\include\etl\fsm_generator.h" />
     <ClInclude Include="..\..\include\etl\callback_service.h" />
+    <ClInclude Include="..\..\include\etl\indirect_vector.h" />
     <ClInclude Include="..\..\include\etl\largest_generator.h" />
     <ClInclude Include="..\..\include\etl\absolute.h" />
     <ClInclude Include="..\..\include\etl\macros.h" />
@@ -514,11 +516,11 @@
     <ClInclude Include="..\..\include\etl\sqrt.h" />
     <ClInclude Include="..\..\include\etl\stl\algorithm.h" />
     <ClInclude Include="..\..\include\etl\stl\alternate\algorithm.h" />
+    <ClInclude Include="..\..\include\etl\stl\alternate\choose_namespace.h" />
     <ClInclude Include="..\..\include\etl\stl\alternate\functional.h" />
     <ClInclude Include="..\..\include\etl\stl\alternate\iterator.h" />
     <ClInclude Include="..\..\include\etl\stl\alternate\limits.h" />
     <ClInclude Include="..\..\include\etl\stl\alternate\utility.h" />
-    <ClInclude Include="..\..\include\etl\stl\choose_namespace.h" />
     <ClInclude Include="..\..\include\etl\stl\functional.h" />
     <ClInclude Include="..\..\include\etl\stl\iterator.h" />
     <ClInclude Include="..\..\include\etl\stl\limits.h" />
@@ -672,6 +674,8 @@
     <ClCompile Include="..\test_delegate_service.cpp" />
     <ClCompile Include="..\test_forward_list_shared_pool.cpp" />
     <ClCompile Include="..\test_bit_stream.cpp" />
+    <ClCompile Include="..\test_indirect_vector.cpp" />
+    <ClCompile Include="..\test_indirect_vector_external_buffer.cpp" />
     <ClCompile Include="..\test_list_shared_pool.cpp" />
     <ClCompile Include="..\test_multi_array.cpp" />
     <ClCompile Include="..\test_no_stl_algorithm.cpp" />
