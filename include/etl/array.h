@@ -259,7 +259,7 @@ namespace etl
     //*************************************************************************
     // Returns an reverse iterator to the reverse beginning of the array.
     //*************************************************************************
-    ETL_CONSTEXPR_11 reverse_iterator rbegin()
+    ETL_CONSTEXPR_17 reverse_iterator rbegin()
     {
       return reverse_iterator(end());
     }
@@ -267,7 +267,7 @@ namespace etl
     //*************************************************************************
     /// Returns a const reverse iterator to the reverse beginning of the array.
     //*************************************************************************
-    ETL_CONSTEXPR_11 const_reverse_iterator rbegin() const
+    ETL_CONSTEXPR_17 const_reverse_iterator rbegin() const
     {
       return const_reverse_iterator(end());
     }
@@ -275,7 +275,7 @@ namespace etl
     //*************************************************************************
     /// Returns a const reverse iterator to the reverse beginning of the array.
     //*************************************************************************
-    ETL_CONSTEXPR_11 const_reverse_iterator crbegin() const
+    ETL_CONSTEXPR_17 const_reverse_iterator crbegin() const
     {
       return const_reverse_iterator(end());
     }
@@ -283,7 +283,7 @@ namespace etl
     //*************************************************************************
     /// Returns a reverse iterator to the end of the array.
     //*************************************************************************
-    ETL_CONSTEXPR_11 reverse_iterator rend()
+    ETL_CONSTEXPR_17 reverse_iterator rend()
     {
       return reverse_iterator(begin());
     }
@@ -291,7 +291,7 @@ namespace etl
     //*************************************************************************
     /// Returns a const reverse iterator to the end of the array.
     //*************************************************************************
-    ETL_CONSTEXPR_11 const_reverse_iterator rend() const
+    ETL_CONSTEXPR_17 const_reverse_iterator rend() const
     {
       return const_reverse_iterator(begin());
     }
@@ -299,7 +299,7 @@ namespace etl
     //*************************************************************************
     /// Returns a const reverse iterator to the end of the array.
     //*************************************************************************
-    ETL_CONSTEXPR_11 const_reverse_iterator crend() const
+    ETL_CONSTEXPR_17 const_reverse_iterator crend() const
     {
       return const_reverse_iterator(begin());
     }
@@ -340,7 +340,7 @@ namespace etl
     /// Fills the array with the specified value.
     ///\param value The value to fill the array with.
     //*************************************************************************
-    void fill(parameter_t value)
+    ETL_CONSTEXPR_20 void fill(parameter_t value)
     {
       std::fill(begin(), end(), value);
     }

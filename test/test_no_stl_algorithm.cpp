@@ -389,6 +389,26 @@ namespace
     }
 
     //*************************************************************************
+    TEST(swap_array)
+    {
+      int initial1[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+      int initial2[] = { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
+
+      int data1[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+      int data2[] = { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
+
+      etlstd::swap(data1, data2);
+
+      bool isEqual;
+
+      isEqual = std::equal(std::begin(initial1), std::end(initial1), std::begin(data2));
+      CHECK(isEqual);
+
+      isEqual = std::equal(std::begin(initial2), std::end(initial2), std::begin(data1));
+      CHECK(isEqual);
+    }
+
+    //*************************************************************************
     TEST(iter_swap)
     {
       int a = 1;

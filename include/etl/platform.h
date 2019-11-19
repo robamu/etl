@@ -86,7 +86,7 @@ SOFTWARE.
   #define ETL_DELETE
   #define ETL_NOEXCEPT
   #define ETL_NOEXCEPT_EXPR(expression)
-
+#endif
 
 #if ETL_CPP14_SUPPORTED
   #define ETL_CONSTEXPR_14 constexpr

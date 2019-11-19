@@ -312,6 +312,7 @@ namespace ETLSTD
   //***************************************************************************
   // fill
   template<typename TIterator, typename TValue>
+  ETL_CONSTEXPR_20
   typename etl::enable_if<!(etl::is_same<char, TValue>::value || etl::is_same<unsigned char, TValue>::value) || !etl::is_pointer<TIterator>::value, void>::type
     fill(TIterator first, TIterator last, const TValue& value)
   {
@@ -322,6 +323,7 @@ namespace ETLSTD
   }
 
   template<typename TIterator, typename TValue>
+  ETL_CONSTEXPR_20
   typename etl::enable_if<(etl::is_same<char, TValue>::value || etl::is_same<unsigned char, TValue>::value) && etl::is_pointer<TIterator>::value, void>::type
     fill(TIterator first, TIterator last, const TValue& value)
   {
@@ -331,6 +333,7 @@ namespace ETLSTD
   //***************************************************************************
   // fill_n
   template<typename TIterator, typename TSize, typename TValue>
+  ETL_CONSTEXPR_20
   typename etl::enable_if<!(etl::is_same<char, TValue>::value || etl::is_same<unsigned char, TValue>::value) || !etl::is_pointer<TIterator>::value, TIterator>::type
     fill_n(TIterator first, TSize count, const TValue& value)
   {
@@ -343,6 +346,7 @@ namespace ETLSTD
   }
 
   template<typename TIterator, typename TSize, typename TValue>
+  ETL_CONSTEXPR_20
   typename etl::enable_if<(etl::is_same<char, TValue>::value || etl::is_same<unsigned char, TValue>::value) && etl::is_pointer<TIterator>::value, void>::type
     fill_n(TIterator first, TSize count, const TValue& value)
   {
@@ -352,6 +356,7 @@ namespace ETLSTD
   //***************************************************************************
   // count
   template <typename TIterator, typename T>
+  ETL_CONSTEXPR_20
   typename iterator_traits<TIterator>::difference_type count(TIterator first, TIterator last, const T& value)
   {
     typename iterator_traits<TIterator>::difference_type n = 0;
@@ -372,6 +377,7 @@ namespace ETLSTD
   //***************************************************************************
   // count
   template <typename TIterator, typename TUnaryPredicate>
+  ETL_CONSTEXPR_20
   typename iterator_traits<TIterator>::difference_type count_if(TIterator first, TIterator last, TUnaryPredicate predicate)
   {
     typename iterator_traits<TIterator>::difference_type n = 0;
@@ -392,17 +398,26 @@ namespace ETLSTD
   //***************************************************************************
   // swap
   template <typename T>
-  void swap(T& a, T& b)
+  ETL_CONSTEXPR_20 void swap(T& a, T& b) ETL_NOEXCEPT
   {
     T c = a;
     a = b;
     b = c;
   }
 
+  template <typename T, std::size_t N>
+  ETL_CONSTEXPR_20 void swap(T(&a)[N], T(&b)[N]) ETL_NOEXCEPT
+  {
+    for (size_t i = 0; i < N; ++i)
+    {
+      std::swap(a[i], b[i]);
+    }
+  }
+
   //***************************************************************************
   // iter_swap
   template <typename TIterator1, typename TIterator2>
-  void iter_swap(TIterator1 a, TIterator2 b)
+  ETL_CONSTEXPR_20 void iter_swap(TIterator1 a, TIterator2 b)
   {
     typename ETLSTD::iterator_traits<TIterator1>::value_type c = *a;
     *a = *b;
