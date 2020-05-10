@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <iterator>
 #include <string>
 #include <vector>
@@ -49,6 +47,8 @@ SOFTWARE.
 #include "etl/crc32_mpeg2.h"
 #include "etl/crc32_posix.h"
 #include "etl/crc64_ecma.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 //*****************************************************************************
 // The results for these tests were created from https://crccalc.com/

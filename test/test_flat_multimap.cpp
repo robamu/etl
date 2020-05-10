@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <map>
 #include <array>
 #include <algorithm>
@@ -39,6 +37,8 @@ SOFTWARE.
 #include "data.h"
 
 #include "etl/flat_multimap.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

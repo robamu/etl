@@ -26,10 +26,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
 #include <string>
 
 #include "etl/user_type.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 ETL_DECLARE_USER_TYPE(CompassDirection, int)
 ETL_USER_TYPE(North, 0)

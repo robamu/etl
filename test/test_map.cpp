@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <map>
 #include <array>
 #include <algorithm>
@@ -39,6 +37,8 @@ SOFTWARE.
 #include "etl/map.h"
 
 #include "data.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 static const size_t MAX_SIZE = 10;
 
@@ -393,8 +393,8 @@ namespace
       Data data(initial_data.begin(), initial_data.end());
       const Data constData(data);
 
-      CHECK_EQUAL(data.begin(), std::begin(data));
-      CHECK_EQUAL(constData.begin(), std::begin(constData));
+      CHECK(data.begin() == std::begin(data));
+      CHECK(constData.begin() == std::begin(constData));
     }
 
     //*************************************************************************
@@ -403,8 +403,8 @@ namespace
       Data data(initial_data.begin(), initial_data.end());
       const Data constData(data);
 
-      CHECK_EQUAL(data.end(), std::end(data));
-      CHECK_EQUAL(constData.end(), std::end(constData));
+      CHECK(data.end() == std::end(data));
+      CHECK(constData.end() == std::end(constData));
     }
 
     //*************************************************************************
@@ -1013,10 +1013,10 @@ namespace
       CHECK_EQUAL(3, it->second);
 
       it = data.find("A");
-      CHECK_EQUAL(data.end(), it);
+      CHECK(data.end() == it);
 
       it = data.find("!");
-      CHECK_EQUAL(data.end(), it);
+      CHECK(data.end() == it);
     }
 
     //*************************************************************************
@@ -1028,10 +1028,10 @@ namespace
       CHECK_EQUAL(3, it->second);
 
       it = data.find("A");
-      CHECK_EQUAL(data.end(), it);
+      CHECK(data.end() == it);
 
       it = data.find("!");
-      CHECK_EQUAL(data.end(), it);
+      CHECK(data.end() == it);
     }
 
     //*************************************************************************
@@ -1068,28 +1068,28 @@ namespace
 
       Compare_Data::iterator i_compare = compare_data.lower_bound("8");
       Data::iterator i_data = data.lower_bound("8");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
 #ifdef TEST_GREATER_THAN
       i_compare = compare_data.lower_bound(".");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.lower_bound(".");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 
       i_compare = compare_data.lower_bound("A");
       i_data = data.lower_bound("A");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 #else
       i_compare = compare_data.lower_bound(".");
       i_data = data.lower_bound(".");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
       i_compare = compare_data.lower_bound("A");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.lower_bound("A");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 #endif
     }
 
@@ -1101,28 +1101,28 @@ namespace
 
       Compare_Data::const_iterator i_compare = compare_data.lower_bound("4");
       Data::const_iterator i_data = data.lower_bound("4");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
 #ifdef TEST_GREATER_THAN
       i_compare = compare_data.lower_bound(".");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.lower_bound(".");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 
       i_compare = compare_data.lower_bound("A");
       i_data = data.lower_bound("A");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 #else
       i_compare = compare_data.lower_bound(".");
       i_data = data.lower_bound(".");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
       i_compare = compare_data.lower_bound("A");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.lower_bound("A");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 #endif
     }
 
@@ -1134,28 +1134,28 @@ namespace
 
       Compare_Data::iterator i_compare = compare_data.upper_bound("2");
       Data::iterator i_data = data.upper_bound("2");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
 #ifdef TEST_GREATER_THAN
       i_compare = compare_data.upper_bound(".");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.upper_bound(".");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 
       i_compare = compare_data.upper_bound("A");
       i_data = data.upper_bound("A");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 #else
       i_compare = compare_data.upper_bound(".");
       i_data = data.upper_bound(".");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
       i_compare = compare_data.upper_bound("A");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.upper_bound("A");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 #endif
     }
 
@@ -1167,28 +1167,28 @@ namespace
 
       Compare_Data::const_iterator i_compare = compare_data.upper_bound("7");
       Data::const_iterator i_data = data.upper_bound("7");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
 #ifdef TEST_GREATER_THAN
       i_compare = compare_data.upper_bound(".");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.upper_bound(".");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 
       i_compare = compare_data.upper_bound("A");
       i_data = data.upper_bound("A");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 #else
       i_compare = compare_data.upper_bound(".");
       i_data = data.upper_bound(".");
-      CHECK_EQUAL(i_compare->second, i_data->second);
+      CHECK(i_compare->second == i_data->second);
 
       i_compare = compare_data.upper_bound("A");
-      CHECK_EQUAL(compare_data.end(), i_compare);
+      CHECK(compare_data.end() == i_compare);
 
       i_data = data.upper_bound("A");
-      CHECK_EQUAL(data.end(), i_data);
+      CHECK(data.end() == i_data);
 #endif
     }
 

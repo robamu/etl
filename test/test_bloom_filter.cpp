@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <vector>
 #include <string.h>
 
@@ -39,6 +37,8 @@ SOFTWARE.
 #include "etl/crc32.h"
 
 #include "etl/char_traits.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 struct hash1_t
 {

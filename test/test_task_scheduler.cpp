@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <stdint.h>
 #include <string>
 #include <vector>
@@ -35,6 +33,8 @@ SOFTWARE.
 #include "etl/task.h"
 #include "etl/scheduler.h"
 #include "etl/container.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 typedef std::vector<std::string> WorkList_t;
 

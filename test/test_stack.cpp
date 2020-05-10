@@ -26,13 +26,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <stack>
 
 #include "data.h"
 
 #include "etl/stack.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

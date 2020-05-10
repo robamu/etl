@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <set>
 #include <array>
 #include <algorithm>
@@ -41,6 +39,8 @@ SOFTWARE.
 
 #include "etl/unordered_multiset.h"
 #include "etl/checksum.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

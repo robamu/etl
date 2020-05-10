@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/string_view.h"
 #include "etl/cstring.h"
 #include "etl/wstring.h"
@@ -40,6 +38,8 @@ SOFTWARE.
 #include <string>
 #include <array>
 #include <ostream>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {
@@ -170,10 +170,10 @@ namespace
     {
       View  view(text.c_str(), text.size());
 
-      CHECK_EQUAL(view.begin(),         view.cbegin());
-      CHECK_EQUAL(view.rbegin().base(), view.crbegin().base());
-      CHECK_EQUAL(view.end(),           view.cend());
-      CHECK_EQUAL(view.rend().base(),   view.crend().base());
+      CHECK(view.begin()         == view.cbegin());
+      CHECK(view.rbegin().base() == view.crbegin().base());
+      CHECK(view.end()           == view.cend());
+      CHECK(view.rend().base()   == view.crend().base());
     }
 
     //*************************************************************************
@@ -190,7 +190,7 @@ namespace
     {
       View  view(text.c_str(), text.size());
 
-      CHECK_EQUAL(text.data(), view.data());
+      CHECK(text.data() == view.data());
     }
 
     //*************************************************************************

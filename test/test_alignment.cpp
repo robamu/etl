@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/alignment.h"
 #include "etl/type_traits.h"
 
@@ -35,6 +33,8 @@ SOFTWARE.
 #include <utility>
 #include <string>
 #include <ostream>
+
+#include "UnitTest++/UnitTest++.h"
 
 void f(int)
 {

@@ -26,14 +26,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <string>
 
 #include "etl/cstring.h"
 #include "etl/wstring.h"
 #include "etl/u16string.h"
 #include "etl/u32string.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

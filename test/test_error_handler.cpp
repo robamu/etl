@@ -26,13 +26,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
 #include <iostream>
 #include <string>
 #include <string.h>
 
 #include "etl/error_handler.h"
 #include "etl/exception.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 bool error_received;
 

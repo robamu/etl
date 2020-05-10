@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/algorithm.h"
 #include "etl/container.h"
 
@@ -42,6 +40,8 @@ SOFTWARE.
 #include <numeric>
 #include <random>
 #include <memory>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

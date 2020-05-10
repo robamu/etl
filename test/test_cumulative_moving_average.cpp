@@ -26,10 +26,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/cumulative_moving_average.h"
 #include "etl/scaled_rounding.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

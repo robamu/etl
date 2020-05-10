@@ -26,9 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-#include "ExtraCheckMacros.h"
-
 #include "etl/message_router.h"
 #include "etl/message_bus.h"
 #include "etl/message_timer.h"
@@ -41,6 +38,9 @@ SOFTWARE.
 #if defined(ETL_COMPILER_MICROSOFT)
 #include <Windows.h>
 #endif
+
+#include "UnitTest++/UnitTest++.h"
+#include "ExtraCheckMacros.h"
 
 #define REALTIME_TEST 0
 

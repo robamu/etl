@@ -26,14 +26,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/state_chart.h"
 #include "etl/enum_type.h"
 #include "etl/queue.h"
 #include "etl/array.h"
 
 #include <iostream>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

@@ -26,8 +26,6 @@
 //SOFTWARE.
 //******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <vector>
 #include <array>
 #include <algorithm>
@@ -38,6 +36,8 @@
 #include "etl/pool.h"
 
 #include "data.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

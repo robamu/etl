@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <string>
 #include <ostream>
 
@@ -37,6 +35,8 @@ SOFTWARE.
 #include "etl/optional.h"
 #include "etl/vector.h"
 #include "data.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 typedef TestDataNDC<std::string> Data;
 typedef TestDataM<uint32_t>      DataM;

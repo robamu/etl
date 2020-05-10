@@ -26,10 +26,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
 #include <string>
 
 #include "etl/enum_type.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 struct enum_test
 {

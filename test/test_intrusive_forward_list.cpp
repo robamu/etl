@@ -26,9 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-#include "ExtraCheckMacros.h"
-
 #include "data.h"
 
 #include "etl/intrusive_forward_list.h"
@@ -40,6 +37,9 @@ SOFTWARE.
 #include <list>
 #include <string>
 #include <functional>
+
+#include "UnitTest++/UnitTest++.h"
+#include "ExtraCheckMacros.h"
 
 typedef TestDataDC<std::string>  ItemDC;
 typedef TestDataNDC<std::string> ItemNDC;

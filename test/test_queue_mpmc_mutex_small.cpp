@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <thread>
 #include <chrono>
 #include <vector>
@@ -44,6 +42,8 @@ SOFTWARE.
 #if defined(ETL_COMPILER_MICROSOFT)
   #include <Windows.h>
 #endif
+
+#include "UnitTest++/UnitTest++.h"
 
 #define REALTIME_TEST 1
 

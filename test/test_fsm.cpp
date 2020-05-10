@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/fsm.h"
 #include "etl/enum_type.h"
 #include "etl/container.h"
@@ -36,6 +34,7 @@ SOFTWARE.
 
 #include <iostream>
 
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

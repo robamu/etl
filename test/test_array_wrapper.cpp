@@ -26,9 +26,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/array_wrapper.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 #if defined(ETL_COMPILER_CLANG)
   #pragma clang diagnostic push

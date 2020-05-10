@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <cstdint>
 #include <type_traits>
 #include <limits>
@@ -37,6 +35,8 @@ SOFTWARE.
 #include "etl/fnv_1.h"
 #include "etl/integral_limits.h"
 #include "etl/type_traits.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 // Count bits the easy way.
 template <typename T>

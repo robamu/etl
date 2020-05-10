@@ -26,12 +26,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <queue>
 
 #include "etl/queue.h"
 #include "data.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

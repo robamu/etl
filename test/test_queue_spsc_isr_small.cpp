@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/queue_spsc_isr.h"
 
 #include <thread>
@@ -39,6 +37,8 @@ SOFTWARE.
 #endif
 
 #include "data.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 #define REALTIME_TEST 0
 

@@ -26,12 +26,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/bit_stream.h"
 
 #include <array>
 #include <numeric>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

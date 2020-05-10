@@ -26,14 +26,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-#include "ExtraCheckMacros.h"
-
 #include "etl/message_router.h"
 #include "etl/message_bus.h"
 #include "etl/queue.h"
 #include "etl/largest.h"
 #include "etl/packet.h"
+
+#include "UnitTest++/UnitTest++.h"
+#include "ExtraCheckMacros.h"
 
 //***************************************************************************
 // The set of messages.

@@ -26,12 +26,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/intrusive_stack.h"
 #include "etl/intrusive_links.h"
 
 #include <vector>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

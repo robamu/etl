@@ -26,10 +26,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
+#include "etl/delegate.h"
+
 #include "UnitTest++/UnitTest++.h"
 #include "ExtraCheckMacros.h"
-
-#include "etl/delegate.h"
 
 namespace
 {

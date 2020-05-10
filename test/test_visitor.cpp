@@ -26,9 +26,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/visitor.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 //*****************************************************************************
 // Pre-declare the data types.

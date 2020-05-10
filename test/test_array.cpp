@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/array.h"
 
 #include <array>
@@ -35,6 +33,8 @@ SOFTWARE.
 #include <iterator>
 
 #include "etl/integral_limits.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

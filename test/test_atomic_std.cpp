@@ -26,12 +26,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/platform.h"
 #include "etl/atomic/atomic_std.h"
 
 #include <atomic>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

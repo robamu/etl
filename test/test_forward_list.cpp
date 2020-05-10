@@ -26,7 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
 #include "ExtraCheckMacros.h"
 
 #include "data.h"
@@ -40,6 +39,8 @@ SOFTWARE.
 #include <string>
 #include <list>
 #include <functional>
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

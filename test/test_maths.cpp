@@ -26,8 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/log.h"
 #include "etl/power.h"
 #include "etl/fibonacci.h"
@@ -35,6 +33,8 @@ SOFTWARE.
 #include "etl/sqrt.h"
 #include "etl/permutations.h"
 #include "etl/combinations.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

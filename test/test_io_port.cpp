@@ -26,13 +26,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/io_port.h"
 
 #include <stdint.h>
 #include <array>
 #include <algorithm>
+
+#include "UnitTest++/UnitTest++.h"
 
 #if defined(ETL_COMPILER_GCC)
   #pragma GCC diagnostic push

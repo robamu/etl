@@ -1,4 +1,8 @@
 ===============================================================================
+18.1.1
+Mods for MacOS CLang compatibility.
+
+===============================================================================
 18.1.0
 Strings may use external buffers if the 'max size' template parameter is zero.
 

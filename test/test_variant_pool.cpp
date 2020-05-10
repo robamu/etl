@@ -26,13 +26,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-#include "ExtraCheckMacros.h"
-
 #include "etl/variant_pool.h"
 
 #include <string>
 #include <type_traits>
+
+#include "UnitTest++/UnitTest++.h"
+#include "ExtraCheckMacros.h"
 
 namespace
 {

@@ -26,13 +26,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include <limits>
 #include <type_traits>
 #include <bitset>
 
 #include "etl/integral_limits.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 namespace
 {

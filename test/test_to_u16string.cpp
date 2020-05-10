@@ -26,11 +26,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ******************************************************************************/
 
-#include "UnitTest++/UnitTest++.h"
-
 #include "etl/to_u16string.h"
 #include "etl/u16string.h"
 #include "etl/format_spec.h"
+
+#include "UnitTest++/UnitTest++.h"
 
 #undef STR
 #define STR(x) u##x
